@@ -310,6 +310,54 @@
 }
 
 @media (min-height: 600px) and (min-width: 992px) {
+   @media (max-width: 1399.98px) {
+      .intro {
+         padding: 50px 0 !important;
+      }
+
+      .box {
+         padding: 30px 15px !important;
+
+         .border-btns-wrapper {
+            gap: 0 !important;
+
+            .button {
+               font-size: 15px !important;
+               height: 42px !important;
+            }
+
+            .border-list {
+               li {
+                  font-size: 13px !important;
+                  line-height: 22px !important;
+               }
+            }
+         }
+         .border-btns-wrapper-item {
+            gap: 15px 80px !important;
+         }
+      }
+   }
+   @media (min-width: 576px) and (max-width: 1399.98px) {
+      .box {
+         .button {
+            padding: 10px !important;
+         }
+      }
+   }
+
+   @media (min-width: 768px) and (max-width: 1399.98px) {
+      .box {
+         width: 670px !important;
+         margin: auto !important;
+         .border-btns-wrapper-item {
+            flex-wrap: nowrap !important;
+            .button {
+               max-width: 190px !important;
+            }
+         }
+      }
+   }
    .intro {
       padding: 120px 0 !important;
    }
