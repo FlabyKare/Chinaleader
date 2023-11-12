@@ -45,30 +45,37 @@
       width: auto;
    }
 
-   @media (max-width: 575.98px) {
+   @media (max-width: 449.98px) {
       .nav-links {
          padding: 10px 0;
       }
 
       .nav-links-wrapper {
          gap: 30px;
+
+         justify-content: space-between;
       }
       .logo-wrapper {
          display: inline-block;
          width: fit-content;
-         margin: 0 auto;
+         //  margin: 0 auto;
       }
       .phone {
          margin-right: 10px;
       }
-
+      .links-list {
+         li {
+            max-width: 30px !important;
+         }
+      }
       .logo-wrapper {
+         padding: 0;
          img {
             max-width: 100px !important;
          }
       }
    }
-   @media (min-width: 575px) and (max-width: 991.98px) {
+   @media (min-width: 450px) and (max-width: 991.98px) {
       max-width: 850px !important;
    }
 
@@ -78,7 +85,7 @@
          gap: 5px;
 
          justify-content: flex-end !important;
-         max-width: 100%;
+         //  max-width: 100%;
          li {
             max-width: 40px;
          }
@@ -105,7 +112,7 @@
 
    .nav-links-wrapper {
       margin: auto;
-      @media (min-width: 320px) {
+      @media (min-width: 450px) {
          display: flex;
          flex-wrap: nowrap;
 
@@ -124,7 +131,7 @@
       }
 
       //   @media (min-width: 768px) and (max-width: 1599.98px) {
-      @media (min-width: 576px) {
+      @media (min-width: 450px) {
          .logo-wrapper {
             img {
                max-width: 180px !important;
@@ -137,7 +144,7 @@
          }
       }
 
-      @media (min-width: 576px) and (max-width: 991.98px) {
+      @media (min-width: 450px) and (max-width: 991.98px) {
          .logo-wrapper {
             img {
                max-width: 140px !important;
@@ -150,7 +157,7 @@
          }
       }
 
-      @media (max-width: 575.98px) {
+      @media (max-width: 449.98px) {
          .phone,
          .email {
             font-size: 15px;
@@ -158,6 +165,8 @@
       }
    }
 }
+
+//! Media запросы при высоте экрана меньше 700px
 
 //! Анимированная граница ( самая первая секция )
 .intro-info-container {
@@ -251,7 +260,7 @@
    }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1399.98px) {
    .intro {
       padding: 50px 0 !important;
    }
@@ -279,7 +288,7 @@
       }
    }
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1399.98px) {
    .box {
       .button {
          padding: 10px !important;
@@ -287,7 +296,7 @@
    }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1399.98px) {
    .box {
       width: 670px !important;
       margin: auto !important;
@@ -299,39 +308,33 @@
       }
    }
 }
-@media (min-width: 992px) and (max-width: 1199.98px) {
+
+@media (min-height: 600px) and (min-width: 992px) {
    .intro {
-      padding: 80px 0 !important;
+      padding: 120px 0 !important;
    }
-   .box {
-      padding: 30px 15px !important;
-
-      width: 880px !important;
-      margin: auto !important;
-      .border-btns-wrapper {
-         gap: 30px !important;
-
-         .button {
-            font-size: 25px !important;
-            height: 68px !important;
-            max-width: 280px !important;
-         }
-
-         .border-list {
-            li {
-               font-size: 18px !important;
-               line-height: 33px !important;
-            }
-         }
+   .marquee-wrapper {
+      .item {
+         font-size: 16px !important;
+         margin: 15px 0 !important;
       }
-      .border-btns-wrapper-item {
-         flex-wrap: nowrap !important;
-         gap: 15px 80px !important;
+   }
+
+   #logo-wrapper {
+      img {
+         max-width: 140px !important;
       }
+   }
+   .nav-links .links-list .social {
+      max-width: 40px !important;
+   }
+   .phone,
+   .email {
+      font-size: 16px !important;
    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
    .intro {
       padding: 80px 0 !important;
    }

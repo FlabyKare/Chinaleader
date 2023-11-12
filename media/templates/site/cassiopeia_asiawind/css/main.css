@@ -44,28 +44,36 @@
       flex-shrink: none;
   width: auto;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 449.98px) {
   .nav-links .nav-links {
     padding: 10px 0;
   }
   .nav-links .nav-links-wrapper {
     gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .nav-links .logo-wrapper {
     display: inline-block;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 0 auto;
   }
   .nav-links .phone {
     margin-right: 10px;
+  }
+  .nav-links .links-list li {
+    max-width: 30px !important;
+  }
+  .nav-links .logo-wrapper {
+    padding: 0;
   }
   .nav-links .logo-wrapper img {
     max-width: 100px !important;
   }
 }
-@media (min-width: 575px) and (max-width: 991.98px) {
+@media (min-width: 450px) and (max-width: 991.98px) {
   .nav-links {
     max-width: 850px !important;
   }
@@ -79,7 +87,6 @@
     -webkit-box-pack: end !important;
         -ms-flex-pack: end !important;
             justify-content: flex-end !important;
-    max-width: 100%;
   }
   .nav-links .links-list li {
     max-width: 40px;
@@ -96,7 +103,7 @@
 .nav-links .nav-links-wrapper {
   margin: auto;
 }
-@media (min-width: 320px) {
+@media (min-width: 450px) {
   .nav-links .nav-links-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -118,7 +125,7 @@
     max-width: fit-content;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 450px) {
   .nav-links .nav-links-wrapper .logo-wrapper img {
     max-width: 180px !important;
   }
@@ -127,7 +134,7 @@
     font-size: 19px;
   }
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 450px) and (max-width: 991.98px) {
   .nav-links .nav-links-wrapper .logo-wrapper img {
     max-width: 140px !important;
   }
@@ -136,7 +143,7 @@
     font-size: 16px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 449.98px) {
   .nav-links .nav-links-wrapper .phone,
   .nav-links .nav-links-wrapper .email {
     font-size: 15px;
@@ -241,7 +248,7 @@
           hyphens: auto;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1399.98px) {
   .intro {
     padding: 50px 0 !important;
   }
@@ -263,12 +270,12 @@
     gap: 15px 80px !important;
   }
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1399.98px) {
   .box .button {
     padding: 10px !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1399.98px) {
   .box {
     width: 670px !important;
     margin: auto !important;
@@ -281,34 +288,26 @@
     max-width: 190px !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-height: 600px) and (min-width: 992px) {
   .intro {
-    padding: 80px 0 !important;
+    padding: 120px 0 !important;
   }
-  .box {
-    padding: 30px 15px !important;
-    width: 880px !important;
-    margin: auto !important;
+  .marquee-wrapper .item {
+    font-size: 16px !important;
+    margin: 15px 0 !important;
   }
-  .box .border-btns-wrapper {
-    gap: 30px !important;
+  #logo-wrapper img {
+    max-width: 140px !important;
   }
-  .box .border-btns-wrapper .button {
-    font-size: 25px !important;
-    height: 68px !important;
-    max-width: 280px !important;
+  .nav-links .links-list .social {
+    max-width: 40px !important;
   }
-  .box .border-btns-wrapper .border-list li {
-    font-size: 18px !important;
-    line-height: 33px !important;
-  }
-  .box .border-btns-wrapper-item {
-    -ms-flex-wrap: nowrap !important;
-        flex-wrap: nowrap !important;
-    gap: 15px 80px !important;
+  .phone,
+  .email {
+    font-size: 16px !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .intro {
     padding: 80px 0 !important;
   }
@@ -433,60 +432,102 @@
   margin-top: 35px;
 }
 
-/* Buttons Start Here */
-.button {
-  position: relative;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 33px;
-  text-decoration: none;
-  cursor: pointer;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 8px;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-  outline: 0;
-  line-height: 20px;
-  padding: 25px;
+@media (min-width: 768px) {
+  /* Buttons Start Here */
+  .button {
+    position: relative;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 33px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    outline: 0;
+    line-height: 20px;
+    padding: 25px;
+  }
+  div.button {
+    line-height: 20px;
+    height: 25px;
+    width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button:active {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+  .glass {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.8)), color-stop(3%, rgba(180, 180, 180, 0.5)), color-stop(45%, rgba(180, 180, 180, 0.1)), color-stop(0%, rgba(0, 0, 0, 0)), color-stop(28%, rgba(0, 0, 0, 0.3)), color-stop(60%, rgba(0, 0, 0, 0.3)), color-stop(65%, rgba(0, 0, 0, 0.3)), color-stop(90%, rgba(255, 255, 255, 0.3)), color-stop(95%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+    background: linear-gradient(to bottom, rgba(180, 180, 180, 0.8) 0%, rgba(180, 180, 180, 0.5) 3%, rgba(180, 180, 180, 0.1) 45%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 28%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 0.3) 90%, rgba(0, 0, 0, 0.3) 95%, rgba(0, 0, 0, 0.3) 100%); /* W3C */
+    border-color: rgba(0, 0, 0, 0.6);
+    -o-border-image: none;
+       border-image: none;
+    border-style: solid;
+    border-width: 0px;
+    -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 2px 6px rgba(0, 0, 0, 0.5), 0 10px rgba(0, 0, 0, 0.05) inset;
+            box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 2px 6px rgba(0, 0, 0, 0.5), 0 10px rgba(0, 0, 0, 0.05) inset;
+  }
+  button:hover.clear-a {
+    color: rgba(255, 255, 255, 0.99);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.99), 0px 0px 4px rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 2px 6px rgba(0, 0, 0, 0.5), 0 10px rgba(0, 0, 0, 0.05) inset, 0 0 5px 2px rgba(255, 255, 255, 0.75), 0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
+            box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 2px 6px rgba(0, 0, 0, 0.5), 0 10px rgba(0, 0, 0, 0.05) inset, 0 0 5px 2px rgba(255, 255, 255, 0.75), 0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
+  }
 }
-
-div.button {
-  line-height: 20px;
-  height: 25px;
-  width: 200px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
+@media (max-width: 767.98px) {
+  .button,
+  div.button {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 33px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    outline: 0;
+    line-height: 20px;
+    padding: 25px;
+    margin: 0 auto;
+  }
+  button:active {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+  .glass {
+    -o-border-image: none;
+       border-image: none;
+    border-style: solid;
+    border-width: 0;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.6);
+  }
+  .glass {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(197, 164, 101, 0.8)), color-stop(3%, rgba(197, 164, 101, 0.5)), color-stop(45%, rgba(197, 164, 101, 0.1)), color-stop(0%, rgba(0, 0, 0, 0)), color-stop(28%, rgba(0, 0, 0, 0.3)), color-stop(60%, rgba(0, 0, 0, 0.3)), color-stop(65%, rgba(0, 0, 0, 0.3)), color-stop(90%, rgba(197, 164, 101, 0.3)), color-stop(95%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+    background: linear-gradient(to bottom, rgba(197, 164, 101, 0.8) 0%, rgba(197, 164, 101, 0.5) 3%, rgba(197, 164, 101, 0.1) 45%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 28%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.3) 65%, rgba(197, 164, 101, 0.3) 90%, rgba(0, 0, 0, 0.3) 95%, rgba(0, 0, 0, 0.3) 100%);
+  }
+  button:hover.clear-a {
+    color: rgba(197, 164, 101, 0.99);
+    text-shadow: 0px 0px 2px rgba(197, 164, 101, 0.99), 0px 0px 4px rgba(197, 164, 101, 0.75);
+    border-color: rgba(197, 164, 101, 0.4);
+    -webkit-box-shadow: 0 1px 0 0 rgba(197, 164, 101, 0.4) inset, 0 2px 6px rgba(0, 0, 0, 0.5), 0 10px rgba(0, 0, 0, 0.05) inset, 0 0 5px 2px rgba(197, 164, 101, 0.75), 0 0 10px 2px rgba(197, 164, 101, 0.75) inset;
+            box-shadow: 0 1px 0 0 rgba(197, 164, 101, 0.4) inset, 0 2px 6px rgba(0, 0, 0, 0.5), 0 10px rgba(0, 0, 0, 0.05) inset, 0 0 5px 2px rgba(197, 164, 101, 0.75), 0 0 10px 2px rgba(197, 164, 101, 0.75) inset;
+  }
 }
-
-button:active {
-  -webkit-transition: none !important;
-  transition: none !important;
-}
-
-.glass {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(180, 180, 180, 0.8)), color-stop(3%, rgba(180, 180, 180, 0.5)), color-stop(45%, rgba(180, 180, 180, 0.1)), color-stop(0%, rgba(0, 0, 0, 0)), color-stop(28%, rgba(0, 0, 0, 0.3)), color-stop(60%, rgba(0, 0, 0, 0.3)), color-stop(65%, rgba(0, 0, 0, 0.3)), color-stop(90%, rgba(255, 255, 255, 0.3)), color-stop(95%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
-  background: linear-gradient(to bottom, rgba(180, 180, 180, 0.8) 0%, rgba(180, 180, 180, 0.5) 3%, rgba(180, 180, 180, 0.1) 45%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 28%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 0.3) 90%, rgba(0, 0, 0, 0.3) 95%, rgba(0, 0, 0, 0.3) 100%); /* W3C */
-  border-color: rgba(0, 0, 0, 0.6);
-  -o-border-image: none;
-     border-image: none;
-  border-style: solid;
-  border-width: 0px;
-  -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 2px 6px rgba(0, 0, 0, 0.5), 0 10px rgba(0, 0, 0, 0.05) inset;
-          box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 2px 6px rgba(0, 0, 0, 0.5), 0 10px rgba(0, 0, 0, 0.05) inset;
-}
-
-button:hover.clear-a {
-  color: rgba(255, 255, 255, 0.99);
-  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.99), 0px 0px 4px rgba(255, 255, 255, 0.75);
-  border-color: rgba(255, 255, 255, 0.4);
-  -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 2px 6px rgba(0, 0, 0, 0.5), 0 10px rgba(0, 0, 0, 0.05) inset, 0 0 5px 2px rgba(255, 255, 255, 0.75), 0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
-          box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.4) inset, 0 2px 6px rgba(0, 0, 0, 0.5), 0 10px rgba(0, 0, 0, 0.05) inset, 0 0 5px 2px rgba(255, 255, 255, 0.75), 0 0 10px 2px rgba(255, 255, 255, 0.75) inset;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
