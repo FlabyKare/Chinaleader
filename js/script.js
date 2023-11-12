@@ -11,7 +11,7 @@ var swiper = new Swiper(".mySwiper", {
    loop: true,
    loopFillGroupWithBlank: true,
    //    freeMode: true,
-   spaceBetween: 100,
+   spaceBetween: 0,
 
    speed: 700,
    // pagination: {
@@ -20,12 +20,13 @@ var swiper = new Swiper(".mySwiper", {
    // },
 
    breakpoints: {
+      1000: {
+         slidesPerView: 2,
+      },
 
-
-    1200: {
-        slidesPerView: 2,
-     },
-
+      576: {
+         spaceBetween: 100,
+      },
       // when window width is >= 1600px
       1600: {
          slidesPerView: 3,

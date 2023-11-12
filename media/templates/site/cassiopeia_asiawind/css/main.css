@@ -649,7 +649,7 @@
 .slider {
   position: relative;
   height: 100%;
-  max-width: 1900px !important;
+  max-width: 1420px !important;
   padding: 0 140px !important;
   margin-top: 40px;
 }
@@ -672,7 +672,7 @@
   }
   .slider .swiper-button-next,
   .slider .swiper-button-prev {
-    top: 440px;
+    top: 420px;
   }
 }
 @media (min-width: 495px) and (max-width: 767.98px) {
