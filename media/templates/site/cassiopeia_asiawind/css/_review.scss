@@ -2,10 +2,9 @@ $blackBG: #1d1b20;
 $goldColor: #d0ad6a;
 
 .review-wrapper {
-   padding: 35px 45px;
-
+   padding: 20px 30px;
+   height: 250px;
    background: $blackBG;
-   height: 330px;
    display: flex;
 
    position: relative;
@@ -15,7 +14,7 @@ $goldColor: #d0ad6a;
    p {
       display: inline-block;
       margin: auto;
-      font-size: 25px;
+      font-size: 20px;
       hyphens: auto;
       text-align: justify;
       color: $goldColor;
@@ -38,7 +37,7 @@ $goldColor: #d0ad6a;
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -160%);
+   transform: translate(-50%, -149%);
 
    border: 7px solid $goldColor;
    background: #1d1b20;
@@ -62,6 +61,14 @@ $goldColor: #d0ad6a;
    }
 }
 @media (max-width: 991.98px) {
+   .review-wrapper-profile {
+      transform: translate(-50%, -161%);
+
+      
+      h5 {
+         font-size: 15px !important;
+      }
+   }
    .review-wrapper {
       height: 230px;
       p {
@@ -71,5 +78,26 @@ $goldColor: #d0ad6a;
    .review-wrapper-profile {
       max-height: 140px;
       max-width: 150px;
+   }
+}
+@media (min-width: 992px) {
+   .swiper-container {
+      height: 450px;
+      .review-wrapper-profile {
+         transform: translate(-50%, -159%);
+         h5 {
+            font-size: 15px;
+         }
+      }
+      .review-wrapper {
+         height: 230px;
+         p {
+            font-size: 16px;
+         }
+      }
+      .review-wrapper-profile {
+         max-height: 140px;
+         max-width: 150px;
+      }
    }
 }
