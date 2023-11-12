@@ -177,8 +177,8 @@
    }
 }
 .border-btns-wrapper {
-   width: 100%;
-   //    max-width: 500px;
+   max-width: 650px;
+   margin: auto;
    .button {
       height: 100px;
       max-width: 500px;
@@ -284,7 +284,7 @@
          }
       }
       .border-btns-wrapper-item {
-         gap: 15px 80px !important;
+         gap: 15px 110px !important;
       }
    }
 }
@@ -298,7 +298,8 @@
 
 @media (min-width: 768px) and (max-width: 1999.98px) {
    .box {
-      width: 670px !important;
+      width: 100%;
+      max-width: 850px !important;
       margin: auto !important;
       .border-btns-wrapper-item {
          flex-wrap: nowrap !important;
@@ -334,16 +335,18 @@
    }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 2000px) and (min-height: 950px) {
    .intro {
       padding: 80px 0 !important;
    }
    .box {
       padding: 30px 15px !important;
 
-      width: 880px !important;
+      max-width: 1100px !important;
       margin: auto !important;
       .border-btns-wrapper {
+         max-width: 830px !important;
+
          gap: 30px !important;
 
          .button {

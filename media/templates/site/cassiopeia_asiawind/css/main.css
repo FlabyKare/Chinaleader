@@ -161,7 +161,8 @@
 }
 
 .border-btns-wrapper {
-  width: 100%;
+  max-width: 650px;
+  margin: auto;
 }
 .border-btns-wrapper .button {
   height: 100px;
@@ -267,7 +268,7 @@
     line-height: 22px !important;
   }
   .box .border-btns-wrapper-item {
-    gap: 15px 80px !important;
+    gap: 15px 110px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 1999.98px) {
@@ -277,7 +278,8 @@
 }
 @media (min-width: 768px) and (max-width: 1999.98px) {
   .box {
-    width: 670px !important;
+    width: 100%;
+    max-width: 850px !important;
     margin: auto !important;
   }
   .box .border-btns-wrapper-item {
@@ -307,16 +309,17 @@
     font-size: 16px !important;
   }
 }
-@media (min-width: 2000px) {
+@media (min-width: 2000px) and (min-height: 950px) {
   .intro {
     padding: 80px 0 !important;
   }
   .box {
     padding: 30px 15px !important;
-    width: 880px !important;
+    max-width: 1100px !important;
     margin: auto !important;
   }
   .box .border-btns-wrapper {
+    max-width: 830px !important;
     gap: 30px !important;
   }
   .box .border-btns-wrapper .button {
