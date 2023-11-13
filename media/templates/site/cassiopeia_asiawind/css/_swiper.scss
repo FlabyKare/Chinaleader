@@ -8,7 +8,9 @@ $goldColor: #d0ad6a;
 
    padding: 0 140px !important;
    margin-top: 40px;
-
+   @media (max-width: 991.98px) {
+      max-width: 720px !important;
+   }
    @media (max-width: 767.98px) {
       padding: 0 15px !important;
       margin-top: 20px;

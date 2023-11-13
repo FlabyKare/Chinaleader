@@ -299,7 +299,7 @@
 @media (min-width: 768px) and (max-width: 1999.98px) {
    .box {
       width: 100%;
-      max-width: 850px !important;
+      //   max-width: 850px !important;
       margin: auto !important;
       .border-btns-wrapper-item {
          flex-wrap: nowrap !important;
@@ -335,14 +335,28 @@
    }
 }
 
-@media (min-width: 2000px) and (min-height: 950px) {
+@media (min-width: 992px) and (max-width: 1299.98px) {
+   .intro-info-container {
+      max-width: 1420px !important;
+      .box {
+         max-width: none !important;
+      }
+   }
+}
+
+// @media (min-width: 2000px) and (min-height: 850px) {
+@media (min-width: 1300px) {
+   .intro-info-container {
+      max-width: 1420px !important;
+   }
+
    .intro {
       padding: 80px 0 !important;
    }
    .box {
       padding: 30px 15px !important;
 
-      max-width: 1100px !important;
+      //   max-width: 1100px !important;
       margin: auto !important;
       .border-btns-wrapper {
          max-width: 830px !important;
